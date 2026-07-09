@@ -46,7 +46,7 @@ K-뷰티 브랜드와 글로벌 바이어를 데이터로 연결하는 AI 매칭
 
 그 외 서비스 구성 요소:
 
-- **Fit Score 진단** — LightGBM + SHAP 기반 미국 시장 적합도 예측. **팀원(ML 담당) 구현** ([`backend/predictor.py`](backend/predictor.py))
+- **Fit Score 진단** - LightGBM + SHAP 기반 미국 시장 적합도 예측. **팀원(ML 담당) 구현** ([`backend/predictor.py`](backend/predictor.py))
 
 ## ERD
 
