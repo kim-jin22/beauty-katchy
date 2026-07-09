@@ -1,6 +1,6 @@
 # Beauty Katchy
 
-K-뷰티 브랜드와 글로벌 바이어를 데이터로 연결하는 AI 매칭 플랫폼 — Demo Day 최우수상 수상작
+K-뷰티 브랜드와 글로벌 바이어를 데이터로 연결하는 AI 매칭 플랫폼 - Demo Day 최우수상 수상작
 
 ## 팀 프로젝트
 
@@ -40,9 +40,9 @@ K-뷰티 브랜드와 글로벌 바이어를 데이터로 연결하는 AI 매칭
 
 직접 구현한 AI 서비스 3종 (DA 팀원의 EDA 결과를 데이터로 활용, 로직·API 연동·LLM 연결은 본인 작성):
 
-1. **AI 소싱 챗 (스마트소싱)** — LangChain RAG: `ingredient_trend` 테이블에서 동적으로 문서를 빌드하고 FAISS 유사도 검색(k=3)으로 컨텍스트를 구성. RAG 실패 시 OpenAI 직접 호출로, 그마저 실패하면 하드코딩 템플릿으로 3단 폴백 ([`backend/routers/buyer.py`](backend/routers/buyer.py))
-2. **마케팅 소스 생성** — GPT-4o-mini API 호출, 인플루언서/상품 데이터를 프롬프트에 동적으로 주입하여 채널 분석·콘텐츠 전략·캠페인 메시지 생성 ([`backend/routers/buyer.py`](backend/routers/buyer.py))
-3. **인플루언서 매칭 AI 메시지** — 매칭된 인플루언서·상품 데이터를 기반으로 GPT-4o-mini가 협업 추천 메시지 생성 ([`backend/routers/influencer.py`](backend/routers/influencer.py))
+1. **AI 소싱 챗 (스마트소싱)** - LangChain RAG: `ingredient_trend` 테이블에서 동적으로 문서를 빌드하고 FAISS 유사도 검색(k=3)으로 컨텍스트를 구성. RAG 실패 시 OpenAI 직접 호출로, 그마저 실패하면 하드코딩 템플릿으로 3단 폴백 ([`backend/routers/buyer.py`](backend/routers/buyer.py))
+2. **마케팅 소스 생성** - GPT-4o-mini API 호출, 인플루언서/상품 데이터를 프롬프트에 동적으로 주입하여 채널 분석·콘텐츠 전략·캠페인 메시지 생성 ([`backend/routers/buyer.py`](backend/routers/buyer.py))
+3. **인플루언서 매칭 AI 메시지** - 매칭된 인플루언서·상품 데이터를 기반으로 GPT-4o-mini가 협업 추천 메시지 생성 ([`backend/routers/influencer.py`](backend/routers/influencer.py))
 
 그 외 서비스 구성 요소:
 
