@@ -36,6 +36,12 @@ K-뷰티 브랜드와 글로벌 바이어를 데이터로 연결하는 AI 매칭
 | LLM | OpenAI GPT-4o-mini |
 | ML | LightGBM + SHAP (팀원 구현) |
 
+## ERD
+
+![ERD](docs/erd.png)
+
+핵심 테이블 20개+ 기준 전체 스키마 설계.
+
 ## 핵심 기능
 
 직접 구현한 AI 서비스 3종 (DA 팀원의 EDA 결과를 데이터로 활용, 로직·API 연동·LLM 연결은 본인 작성):
@@ -47,12 +53,6 @@ K-뷰티 브랜드와 글로벌 바이어를 데이터로 연결하는 AI 매칭
 그 외 서비스 구성 요소:
 
 - **Fit Score 진단** - LightGBM + SHAP 기반 미국 시장 적합도 예측. **팀원(ML 담당) 구현** ([`backend/predictor.py`](backend/predictor.py))
-
-## ERD
-
-![ERD](docs/erd.png)
-
-핵심 테이블 20개+ 기준 전체 스키마 설계.
 
 ## 데모 영상
 
