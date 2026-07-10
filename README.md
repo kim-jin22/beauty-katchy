@@ -6,10 +6,6 @@ K-뷰티 브랜드와 글로벌 바이어를 데이터로 연결하는 AI 매칭
 
 팀 백엔드(Railway/Supabase)가 종료되어 현재 API가 응답하지 않습니다. 실제 서비스 흐름은 아래 영상으로 확인하실 수 있습니다.
 
-- [1. 브랜드 모드 - 상품 등록, Fit Score 산출](https://drive.google.com/file/d/1rwb2ffiFch5wHM7zxNgwVebdu91-m96I/view?usp=drive_link)
-- [2. 바이어 모드 - AI 소싱, 매칭 요청](https://drive.google.com/file/d/1B2Jw6CebcvdkG4gqh8qIuJGFB1lgOzLQ/view?usp=drive_link)
-- [3. 매칭 후 - 인플루언서 페르소나, 마케팅 소스](https://drive.google.com/file/d/1fHxJ7Knx4NgUG0kdX6zbk6uTddH2l6JU/view?usp=drive_link)
-
 ### 검증: 이미 성공한 제품으로 역검증
 
 ![검증](assets/slides/01_validation_anua.jpg)
@@ -18,17 +14,17 @@ K-뷰티 브랜드와 글로벌 바이어를 데이터로 연결하는 AI 매칭
 
 ### 서비스 흐름
 
+브랜드사 — 상품 등록(한글 성분→INCI 자동 변환), Fit Score 진단(LightGBM+SHAP), 바이어 소싱 풀 노출
+- [1. 브랜드 모드 - 상품 등록, Fit Score 산출](https://drive.google.com/file/d/1rwb2ffiFch5wHM7zxNgwVebdu91-m96I/view?usp=drive_link)
 ![브랜드사 - 시장 탐색](assets/slides/02_brand_market_scan.jpg)
 
-브랜드사 — 상품 등록(한글 성분→INCI 자동 변환), Fit Score 진단(LightGBM+SHAP), 바이어 소싱 풀 노출
-
+바이어 — AI 소싱 채팅(LangChain RAG, 100만 건 리뷰), Fit Score순 제품 비교, 데이터 기반 협상 가이드
+- [2. 바이어 모드 - AI 소싱, 매칭 요청](https://drive.google.com/file/d/1B2Jw6CebcvdkG4gqh8qIuJGFB1lgOzLQ/view?usp=drive_link)
 ![바이어 - 미국 진출](assets/slides/03_buyer_us_entry.jpg)
 
-바이어 — AI 소싱 채팅(LangChain RAG, 100만 건 리뷰), Fit Score순 제품 비교, 데이터 기반 협상 가이드
-
-![매칭 이후 - 현지 정착](assets/slides/04_post_matching.jpg)
-
 매칭 이후 — 인플루언서 매칭(SENTENCE-BERT 코사인 유사도), GPT-4o-mini 마케팅 전략 생성, VADER 감성 추이 모니터링
+- [3. 매칭 후 - 인플루언서 페르소나, 마케팅 소스](https://drive.google.com/file/d/1fHxJ7Knx4NgUG0kdX6zbk6uTddH2l6JU/view?usp=drive_link)
+![매칭 이후 - 현지 정착](assets/slides/04_post_matching.jpg)
 
 ## 팀 프로젝트
 
